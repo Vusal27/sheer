@@ -1,0 +1,33 @@
+.block {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 40px;
+    @include laptop() {
+        flex-flow: column;
+        align-items: flex-start;
+    }
+    &__left {
+        width: 600px;
+        transform: translateY(30px);
+        @include laptop() {
+            margin-bottom: 50px;
+        }
+        @include tablet() {
+            width: 100%;
+            z-index: 10;
+        }
+    }
+    &__right {
+        width: 360px;
+        @include laptop() {
+            width: 500px;
+            align-self: flex-end;
+        }
+        @include tablet() {
+            width: 100%;
+            max-width: 500px;
+            align-self: center;
+        }
+    }
+}

@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <link href="./styles/normalize/normalize.css" rel="stylesheet" type="text/css"/>
+        <link href="./styles/main.css" rel="stylesheet" type="text/css"/>
+    </head>
+    <body>
+        <div class="wrapper">
+            <header class="header">
+                <div class="container">
+                    <ul class="header__list">
+                        <li class="header__item">
+                            <a href="#" class="header__item-link">Услуги</a>
+                        </li>
+                        <li class="header__item">
+                            <a href="#" class="header__item-link">Преимущества</a>
+                        </li>
+                        <li class="header__item">
+                            <a href="#" class="header__item-link">Материалы</a>
+                        </li>
+                        <li class="header__item">
+                            <a href="#" class="header__item-link">Портфолио</a>
+                        </li>
+                        <li class="header__item">
+                            <a href="#" class="header__item-link">Отзывы</a>
+                        </li>
+                        <li class="header__item">
+                            <a href="#" class="header__item-link">Контакты</a>
+                        </li>
+                    </ul>
+                    <a href="#" class="burger-link">
+                        <div  class="burger"></div>
+                    </a>
+                </div>
+            </header>
+            <main class="main container">
+                <div class="row">
+                    <div class="row__logo">
+                        <a href="#" class="row__logo-link">
+                            <img src="./images/icons/logo.svg" alt="logo" class="row__logo-icon">
+                            <span class="row__logo-text">кровли, фасады, бмз,<br/>металлоконструкции</span>
+                        </a>
+                    </div>
+                    <div class="row__phone">
+                        <a href="tel:+79787872546" class="row__phone-number">+7 (978) 787-25-46</a>
+                        <button class="row__phone-btn">Заказать звонок</button>
+                    </div>
+                </div>
+                <div class="banner">
+                    <h1 class="banner__content">кровельные работы<br/>с гарантией 10 лет в симферополе и по крыму</h1>
+                </div>
+                <div class="block">
+                    <div class="block__left">
+                        <ul class="advantages">
+                            <li class="advantages__item">
+                                <img src="./images/icons/advantage_1.svg" alt="icon" class="advantages__item-icon">
+                                <div class="advantages__item-content">
+                                    <h2 class="advantages__item-title">быстро</h2>
+                                    <div class="advantages__item-desc">от 4-ч дней</div>
+                                </div>
+                            </li>
+                            <li class="advantages__item">
+                                <img src="./images/icons/advantage_2.svg" alt="icon" class="advantages__item-icon">
+                                <div class="advantages__item-content">
+                                    <h2 class="advantages__item-title">выгодно</h2>
+                                    <div class="advantages__item-desc">наши цены Вас порадуют</div>
+                                </div>
+                            </li>
+                            <li class="advantages__item">
+                                <img src="./images/icons/advantage_3.svg" alt="icon" class="advantages__item-icon">
+                                <div class="advantages__item-content">
+                                    <h2 class="advantages__item-title advantages__item-title--full">Надежно</h2>
+                                    <div class="advantages__item-desc advantages__item-desc--full">гарантия 10 лет</div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="block__right">
+                        <div class="form">
+                            <h2 class="form__title">узнайте цену за 3 минуты</h2>
+                            <div class="form__desc">Оставьте заявку на расчет цены<br/>и узнайте точные сроки и стоимость работ</div>
+                            <form action id="form">
+                                <label class="form__label">
+                                    <input type="text" class="form__input" placeholder="Ваше имя"/>
+                                    <img src="./images/icons/account.svg" alt="account" class="form__input-icon">
+                                </label>
+                                <label class="form__label">
+                                    <input type="number" class="form__input" placeholder="Ваш номер"/>
+                                    <img src="./images/icons/phone.svg" alt="phone" class="form__input-icon">
+                                </label>
+                                <label class="form__label">
+                                    <button type="submit" class="form__btn">узнать цену</button>
+                                </label>
+                                <label class="form__label">
+                                    <input type="checkbox" class="form__checkbox"/>
+                                    <span class="form__checkbox-fake"></span>
+                                    <span class="form__checkbox-desc">Согласие с политикой конфиденциальности</span>
+                                </label>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <div class="man">
+                    <img src="./images/content/man.png" alt="men" class="man__img">
+                </div>
+            </main>
+            <img src="./images/content/background.jpg" alt="bg" class="background">
+            <div class="popup">
+                <div class="popup-container">
+                    <div class="form">
+                        <h2 class="form__title">перезвоним за 3 минуты</h2>
+                        <div class="form__desc">Оставьте ваши данные<br/>и наш сотрудник свяжется с Вами</div>
+                        <button class="form__close">x</button>
+                        <form action id="form">
+                            <label class="form__label">
+                                <input type="text" class="form__input" placeholder="Ваше имя"/>
+                                <svg class="form__input-icon">
+                                    <use xlink:href="./images/icons/sprite.svg#person"></use>
+                                </svg>
+                            </label>
+                            <label class="form__label">
+                                <input type="number" class="form__input" placeholder="Ваш номер"/>
+                                <svg class="form__input-icon">
+                                    <use xlink:href="./images/icons/sprite.svg#phone"></use>
+                                </svg>
+                            </label>
+                            <label class="form__label">
+                                <button type="submit" class="form__btn">заказать звонок</button>
+                            </label>
+                            <label class="form__label">
+                                <input type="checkbox" class="form__checkbox"/>
+                                <span class="form__checkbox-fake"></span>
+                                <span class="form__checkbox-desc">Согласие с политикой конфиденциальности</span>
+                            </label>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="mb-menu">
+                <ul class="mb-menu__list">
+                    <li class="mb-menu__item">
+                        <a href="#" class="mb-menu__item-link">Услуги</a>
+                    </li>
+                    <li class="mb-menu__item">
+                        <a href="#" class="mb-menu__item-link">Преимущества</a>
+                    </li>
+                    <li class="mb-menu__item">
+                        <a href="#" class="mb-menu__item-link">Материалы</a>
+                    </li>
+                    <li class="mb-menu__item">
+                        <a href="#" class="mb-menu__item-link">Портфолио</a>
+                    </li>
+                    <li class="mb-menu__item">
+                        <a href="#" class="mb-menu__item-link">Отзывы</a>
+                    </li>
+                    <li class="mb-menu__item">
+                        <a href="#" class="mb-menu__item-link">Контакты</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <script src="./scripts/main.js"></script>
+    </body>
+</html>

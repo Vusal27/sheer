@@ -1,0 +1,40 @@
+.mb-menu {
+    background-color: white;
+    opacity: 0.9;
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: none;
+    flex-flow: column;
+    align-items: center;
+    justify-content: start;
+    z-index: 100;
+    &--active {
+        display: flex;
+        padding: 20px 0
+    }
+    &__list {
+        height: 100%;
+        display: flex;
+        flex-flow: column;
+        align-items: center;
+        justify-content: space-around;
+    }
+    &__item {
+        &:hover {
+            border-right: 2px solid #dd2c14;
+            border-left: 2px solid #dd2c14;
+            .mb-menu__item-link {
+                color: #dd2c14;
+            }
+        }
+        &-link {
+            color: black;
+            font-weight: bold;
+            font-size: 18px;
+            padding: 0 10px;
+        }
+    }
+}
